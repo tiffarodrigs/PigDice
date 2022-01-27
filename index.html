@@ -10,11 +10,22 @@
 <body>
   <div class='container'>
     <h1>Pig Dice</h1>
-    <form id='player'>
+    <form class='player'>
       <label for="player1">Player 1 Enter Name</label>
       <input type="text" id="player1" >
-      <button type="submit" class='btn btn-primary' id="roll">Roll</button>
-      <button class='btn btn-danger'>Hold</button>
+      <button type="button" class='btn btn-primary' id="roll1">Roll</button>
+      <button type="button" id="hold1">Hold</button>
+     <p>dice roll:<span id="diceRoll1"></span> Temp score:<span id="tempScore1"></span> Total score:<span id="totalScore1"></span></p>
+    </form>
+
+
+    <form class='player'>
+      <label for="player2">Player 2 Enter Name</label>
+      <input type="text" id="player2" >
+      <button type="button" class='btn btn-primary' id="roll2" disabled>Roll</button>
+      <button type="button" id="hold2" disabled >Hold</button>
+      <p>dice roll:<span id="diceRoll2"></span> Temp score:<span id="tempScore2"></span> Total score:<span id="totalScore2"></span></p>
+
     </form>
 
     
